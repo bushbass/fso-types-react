@@ -1,9 +1,9 @@
 import Content from "./components/Content";
 import Header from "./components/Header";
+import Part from "./components/Part";
 import Total from "./components/Total";
-import { CoursePartBackground, CoursePartBasic, CoursePartGroup } from "./types";
+import { CoursePart } from "./types";
 
-type CoursePart = CoursePartBasic | CoursePartGroup | CoursePartBackground;
 
 const App = () => {
   const courseName = "Half Stack application development";
