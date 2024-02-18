@@ -47,10 +47,10 @@ function Part(props: CourseParts) {
 
             {props.courseParts.map(part => {
                 switch (part.kind) {
-                    case 'basic': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br/><em>{part.description}</em></p></>); }
-                    case 'group': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br/>Group Project Count: {part.groupProjectCount}</p></> )};
-                    case 'background': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br/><em>{part.description}</em><br/>Background Material: {part.backgroundMaterial}</p></>) };
-                    case 'special': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br/><em>{part.description}</em><br/>Required Skills: {part.requirements}</p></> )};
+                    case 'basic': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br /><em>{part.description}</em></p></>); }
+                    case 'group': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br />Group Project Count: {part.groupProjectCount}</p></>); }
+                    case 'background': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br /><em>{part.description}</em><br />Background Material: {part.backgroundMaterial}</p></>); }
+                    case 'special': { return (<><p><strong>Name: {part.name} - {part.exerciseCount}</strong><br /><em>{part.description}</em><br />Required Skills: {part.requirements}</p></>); }
                     default: return assertNever(part);
                 }
             })}
